@@ -71,7 +71,6 @@ export default function Header() {
             <>
               <Link href="/auth/signin" passHref legacyBehavior>
                 <Button
-                  as="a"
                   variant="outline"
                   className={`${buttonBaseStyles} px-4 py-1`}
                 >
@@ -80,7 +79,6 @@ export default function Header() {
               </Link>
               <Link href="/auth/signup" passHref legacyBehavior>
                 <Button
-                  as="a"
                   variant="outline"
                   className={`${buttonBaseStyles} px-4 py-1`}
                 >
