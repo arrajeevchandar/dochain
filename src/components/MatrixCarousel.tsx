@@ -11,7 +11,7 @@ const campaigns = [
   // add more if you want!
 ];
 
-export default function ExplodingCarousel() {
+export default function MatrixCarousel() {
   const [ref] = useKeenSlider({
     loop: true,
     slides: { perView: 1.3, spacing: 24 },
