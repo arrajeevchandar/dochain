@@ -1,16 +1,16 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Carousel from "@/components/Carousel";
+import BlockchainStats from "@/components/BlockchainStats";
+import ExplodingCarousel from "@/components/ExplodingCarousel";
 import Footer from "@/components/Footer";
-
+import DynamicHero from "@/components/DynamicHero";
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex-grow">
-        <Hero />
-        <Carousel />
-        {/* Optional additional content here */}
+      <main>
+        <DynamicHero />
+        <BlockchainStats />
+        <ExplodingCarousel />
       </main>
       <Footer />
     </>

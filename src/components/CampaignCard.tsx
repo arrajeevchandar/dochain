@@ -1,3 +1,4 @@
+// components/CampaignCard.tsx
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -9,16 +10,16 @@ interface CampaignCardProps {
 
 export default function CampaignCard({ title, description, image }: CampaignCardProps) {
   return (
-    <Card className="hover:shadow-2xl transition cursor-pointer max-w-xs bg-gradient-to-tr from-indigo-50 to-white border border-indigo-200">
-      <img src={image} alt={title} className="w-full h-56 object-cover rounded-t" />
+    <Card className="max-w-xs bg-slate-900 border border-cyan-400 shadow-lg rounded-2xl hover:scale-105 hover:shadow-cyan-400/50 transition-all">
+      <img src={image} alt={title} className="w-full h-48 object-cover rounded-t-2xl border-b-2 border-yellow-400" />
       <CardHeader>
-        <CardTitle className="text-indigo-800">{title}</CardTitle>
+        <CardTitle className="text-cyan-400 text-xl font-black uppercase">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-indigo-600 text-sm">{description}</p>
+        <p className="text-slate-100 text-sm font-semibold">{description}</p>
       </CardContent>
       <CardFooter>
-        <Button variant="secondary" className="w-full">
+        <Button className="bg-cyan-400 text-black font-bold w-full rounded shadow hover:bg-yellow-400 hover:text-cyan-600 transition uppercase">
           Donate
         </Button>
       </CardFooter>
