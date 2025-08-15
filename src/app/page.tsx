@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
-import BlockchainStats from "@/components/BlockchainStats";
-import ExplodingCarousel from "@/components/ExplodingCarousel";
-import Footer from "@/components/Footer";
 import DynamicHero from "@/components/DynamicHero";
+import BlockchainStats from "@/components/BlockchainStats";
+import MatrixCarousel from "@/components/MatrixCarousel";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <>
@@ -10,7 +11,7 @@ export default function Home() {
       <main>
         <DynamicHero />
         <BlockchainStats />
-        <ExplodingCarousel />
+        <MatrixCarousel />
       </main>
       <Footer />
     </>

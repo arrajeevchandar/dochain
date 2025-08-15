@@ -1,13 +1,10 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-// ...rest as before
-
 
 export default function DynamicHero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#101828]">
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-transparent">
       {/* Animated Crypto Circles */}
       <motion.div
         className="absolute right-0 top-0 w-[600px] h-[600px] rounded-full bg-cyan-400 blur-3xl opacity-20 -z-10"
@@ -22,7 +19,7 @@ export default function DynamicHero() {
         transition={{ duration: 14, repeat: Infinity }}
       />
       {/* Center Card */}
-      <div className="relative z-20 text-center px-8 py-20 bg-none">
+      <div className="relative z-20 text-center px-8 py-20 bg-black/40 backdrop-blur-2xl rounded-3xl shadow-2xl border-4 border-cyan-400">
         <motion.h1
           initial={{ opacity: 0, y: 40, scale: 0.94 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
