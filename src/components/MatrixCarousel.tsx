@@ -5,9 +5,9 @@ import CampaignCard from "./CampaignCard";
 import "keen-slider/keen-slider.min.css";
 
 const campaigns = [
-  { id: "c1", title: "Clean Water for Africa", description: "Building wells to bring clean water.", image: "https://source.unsplash.com/800x600/?water" },
-  { id: "c2", title: "Solar Energy for Schools", description: "Solar panels for remote schools.", image: "https://source.unsplash.com/800x600/?solar" },
-  { id: "c3", title: "Healthcare Improvement", description: "Medical supplies for clinics.", image: "https://source.unsplash.com/800x600/?healthcare" },
+  { id: "c1", title: "Clean Water for Africa", description: "Building wells to bring clean water.", image: "/africa.png" },
+  { id: "c2", title: "Solar Energy for Schools", description: "Solar panels for remote schools.", image: "/solar.png" },
+  { id: "c3", title: "Healthcare Improvement", description: "Medical supplies for clinics.", image: "/health.png" },
   // add more if you want!
 ];
 

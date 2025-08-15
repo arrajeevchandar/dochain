@@ -133,13 +133,19 @@ export default function Header() {
             </div>
           ) : (
             <>
-              <Link href="/auth/signin" onClick={() => setMenuOpen(false)}>
-                <Button variant="outline" className="border-cyan-400 text-cyan-200 mt-3">
+             <Link href="/auth/signin" passHref legacyBehavior>
+                <Button
+                  variant="outline"
+                  className={`${buttonBaseStyles} px-4 py-1`}
+                >
                   Sign In
                 </Button>
-              </Link>
-              <Link href="/auth/signup" onClick={() => setMenuOpen(false)}>
-                <Button variant="outline" className="border-cyan-400 text-cyan-200 mt-1">
+              </Link> <br />
+              <Link href="/auth/signup" passHref legacyBehavior>
+                <Button
+                  variant="outline"
+                  className={`${buttonBaseStyles} px-4 py-1`}
+                >
                   Sign Up
                 </Button>
               </Link>

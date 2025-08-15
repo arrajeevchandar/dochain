@@ -10,10 +10,17 @@ interface CampaignCardProps {
 
 export default function CampaignCard({ title, description, image }: CampaignCardProps) {
   return (
-    <Card className="max-w-xs bg-black/50 backdrop-blur-xl border-2 border-cyan-400 shadow-lg rounded-2xl hover:scale-105 hover:shadow-cyan-400/70 transition">
-      <img src={image} alt={title} className="w-full h-48 object-cover rounded-t-2xl border-b-2 border-yellow-400" />
+    <Card className="max-w-xs bg-black/50 backdrop-blur-xl border-2 border-cyan-400 shadow-lg rounded-2xl hover:scale-105 hover:shadow-cyan-400/70 transition-transform duration-300">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-48 object-cover rounded-t-2xl border-b-2 border-yellow-400"
+        loading="lazy"
+      />
       <CardHeader>
-        <CardTitle className="text-cyan-300 text-xl font-black uppercase">{title}</CardTitle>
+        <CardTitle className="text-cyan-300 text-xl font-black uppercase">
+          {title}
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-slate-100 text-sm font-semibold">{description}</p>
