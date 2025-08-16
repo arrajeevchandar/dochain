@@ -1,26 +1,11 @@
 import NextAuth from "next-auth";
-import Google from "next-auth/providers/google";
-import Email from "next-auth/providers/email";
-import Credentials from "next-auth/providers/credentials";
+import GoogleProvider from "next-auth/providers/google";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
-    Google, 
-    Email,
-    Credentials({
-      name: "Credentials",
-      credentials: {
-        email: { label: "Email", type: "email" },
-        password: { label: "Password", type: "password" },
-      },
-      authorize: async (credentials) => {
-        // Replace with your own user validation logic
-        if (credentials?.email === "user@example.com" && credentials?.password === "password123") {
-          return { id: "1", name: "Demo User", email: credentials.email };
-        }
-        // Return null if authentication fails
-        return null;
-      },
+    GoogleProvider({
+      clientId: process.env.AUTH_GOOGLE_ID,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
   session: { strategy: "jwt" },
