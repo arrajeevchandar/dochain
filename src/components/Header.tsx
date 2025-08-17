@@ -1,9 +1,13 @@
+// src/components/Header.tsx
+
 'use client';
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useSession, signOut } from 'next-auth/react';
 import { useState } from 'react';
+import WalletConnect from '@/components/WalletConnect';
+
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -46,6 +50,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden md:flex items-center space-x-5 z-10">
+          <WalletConnect />
           {session ? (
             <>
               <div className="flex items-center space-x-2">
@@ -97,6 +102,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <WalletConnect />
           {session ? (
             <div className="mt-4 flex items-center space-x-3">
               
