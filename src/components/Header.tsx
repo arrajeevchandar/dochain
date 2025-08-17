@@ -50,7 +50,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden md:flex items-center space-x-5 z-10">
-          <WalletConnect />
+          <WalletConnect signedIn={!!session} />
           {session ? (
             <>
               <div className="flex items-center space-x-2">
@@ -102,7 +102,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <WalletConnect />
+          <WalletConnect signedIn={!!session} />
           {session ? (
             <div className="mt-4 flex items-center space-x-3">
               
