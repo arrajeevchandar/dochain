@@ -5,16 +5,16 @@ import { prisma } from "@/lib/prisma"; // Adjust path if needed
 export async function POST(req: Request) {
   try {
     // Parse request body
-    const { username, email, password } = await req.json();
+    const { name, email, password } = await req.json();
 
     // Validate required fields
-    if (!username || !email || !password) {
+    if (!name || !email || !password) {
       console.error("Missing required fields:", { name, email, password });
       return NextResponse.json({ error: "Name, email and password are required" }, { status: 400 });
     }
 
     // Optional: trim string fields
-    const trimmedName = username.trim();
+    const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedPassword = password.trim();
 
