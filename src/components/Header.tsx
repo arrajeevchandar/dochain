@@ -67,12 +67,12 @@ export default function Header() {
             </>
           ) : (
             <>
-              <Link href="/auth/signin" passHref legacyBehavior>
+              <Link href="/auth/signin" >
                 <Button variant="outline" className={`${buttonBaseStyles} px-4 py-1`}>
                   Sign In
                 </Button>
               </Link>
-              <Link href="/auth/signup" passHref legacyBehavior>
+              <Link href="/auth/signup" >
                 <Button variant="outline" className={`${buttonBaseStyles} px-4 py-1`}>
                   Sign Up
                 </Button>
@@ -120,13 +120,13 @@ export default function Header() {
             </div>
           ) : (
             <>
-              <Link href="/auth/signin" passHref legacyBehavior>
+              <Link href="/auth/signin" >
                 <Button variant="outline" className={`${buttonBaseStyles} px-4 py-1`}>
                   Sign In
                 </Button>
               </Link>{' '}
               <br />
-              <Link href="/auth/signup" passHref legacyBehavior>
+              <Link href="/auth/signup" >
                 <Button variant="outline" className={`${buttonBaseStyles} px-4 py-1`}>
                   Sign Up
                 </Button>
