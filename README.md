@@ -1,4 +1,4 @@
-# 🌐 Please refer to the link for the deployed results  
+# 🌐 Please refer to the link for the deployed result
 [**https://blockdochain.vercel.app/**](https://blockdochain.vercel.app/)
 
 # 🎥 Please refer to the video link for the demo  
