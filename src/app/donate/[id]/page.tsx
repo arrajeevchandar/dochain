@@ -31,7 +31,7 @@ const campaigns = [
 ];
 
 // YOUR Sepolia campaign/test wallet address here
-const CAMPAIGN_WALLET = '0xBCfaD549823c707D07e8f6112aA8E44b2A495f8C'; // <--- REPLACE THIS!
+const CAMPAIGN_WALLET = '0x00ed998780Fc14C7F1d808766Feb7420237B3052'; // <--- REPLACE THIS!
 
 export default function DonatePage() {
   const { data: session, status } = useSession();
